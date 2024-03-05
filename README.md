@@ -136,9 +136,188 @@ print(z) # 'cherry'
 
 So this is like saying that the variables x, y, z are equal to the values in the fruits array.
 They will unpack in the same order due to indexing.
+```
+
+### Global Variables and Scope:
+- These are variables that are created outside of a funcrion and can be used everywhere in the code file, both inside functions and outside of them.
+```
+x = 'This is a global variable'
+
+def myFunction():
+  print(x) // 'This is a global variable'
+
+myFunction() // This will call myFunction which prints the string assigned to it. 
+```
+- As for function scope, this will be a local scope and therefore only useable by the function itself.
+
+```
+def newFunction():
+  x = 'This is function scoped'
+  print(x)
+
+newFunction() // This will output 'This is function scoped'
+```
+
+- If you want the function scoped variable to be accessible outside of the function, the global keyword can be used, though not considered best practice.
+- It can also be used in reverse, to re-assign a global variable inside a function:
+```
+def newFunction():
+  global x
+  x = 'This is function scoped'
+  print(x)
 
 ```
 
+## Data Types extended:
+- There are many data types in Python and variables can store data of these types.
+
+### Built-In Data Types.
+- Text Type:	'str' or String
+- Numeric Types:	int, float, complex or Integer, Floating Decimal and Complex number
+- Sequence Types:	list, tuple, range
+- Mapping Type:	dict or Object
+- Set Types:	set, frozenset
+- Boolean Type:	bool
+- Binary Types:	bytes, bytearray, memoryview
+- None Type:	NoneType
+
+### Setting Data types:
+- Getting was explained above in the Basics.
+- Data types are set when values are assigned to variables based on their syntax.
+- The following examples use constructor functions.
+
+```
+# str
+string_type = str("I am a string type")
+
+# int, float, complex
+integer_type = int(20)
+floating_type = float(0.65)  
+complex_type = complex(1j)
+
+# list, tuple, range
+list_type = list(("Like", "An", "Array")) // Output : ["Like", "An", "Array"]
+tuple_type = tuple(("This", "Is", "Tuple"))
+range_type = range(5)
+
+# dict
+dictionary_type = dict((key="value"))
+
+// Output {"Key": "Value"}
+
+# set, frozenset
+set_type = set(("kinda", "like", "an", "array")) // Output {"kinda", "like", "an", "array"}
+frozenset_type = frozenSet(("frozen", "set", "type"))
+
+# bool
+bool_type_true = bool(5) // Checking if the value of 5 is true
+
+# bytes, bytearray, memoryview
+bytes_type = b"Hello"
+bytearray_type = bytearray(5)
+memoryview_type = memoryview(bytes(5))
+
+# NoneType
+nonetype_type = None
+```
+
+## Numbers:
+
+### Type conversion with Numbers:
+
+## Casting types:
+
+## Strings:
+
+## Booleans:
+
+## Operators:
+
+## Lists:
+
+## Tuples:
+
+## Sets:
+
+## Dictionaries:
+
+## Loops
+### If Else:
+
+### While:
+
+### For:
+
+## Functions:
+
+## Lambdas:
+
+## Arrays:
+
+## Classes/Objects:
+
+## Inheritance and Meta classes:
+
+## Iterators:
+
+## Polymorphism:
+
+## Scope:
+
+## Modules:
+
+## Dates:
+
+## Math:
+
+## JSON:
+
+## RegEx:
+
+## PIP:
+
+## Try...Except:
+
+## User Input:
+
+## String formatting:
+
+## File Handling:
+
+### CRUD:
+
+## Modules:
+### NumPy
+### Pandas
+### SciPy
+
+## Matplotlib:
+### The Basics:
+
+### Pyplot:
+### Plotting:
+### Markers:
+### Line:
+### Labels:
+### Grid:
+### Subplot:
+### Scatter:
+### Histograms:
+### Bars:
+### Pies:
+
+## Python with MySQL:
+### Database Creation:
+### Create Table:
+### Insert:
+### Select:
+### Where:
+### Order By:
+### Delete:
+### Drop Table:
+### Update:
+### Limit:
+### Join:
 
 
 
