@@ -241,6 +241,34 @@ nonetype_type = None
 ## Casting types:
 
 ## Strings:
+### join() method:
+- The join() method takes all items in an iterable and joins them into one string. A string must be specified as the separator.
+```
+dictExample = {"name": "Cee", "country":"Wales"}
+separatorString = "Seperates"
+
+x = separatorString.join(dictExample)
+# Output would be: nameSeparatescountry
+# When using a dictionary as an iterable, the returned values are the keys, not the values.
+
+# If we were to do this with a Tuple instead:
+tupleExample = ("Sparkle", "Acheron", "Robin")
+x = "THEN".join(tupleExample)
+
+print(x)
+# Output: SparkleTHENAcheronTHENRobin
+
+```
+
+### Slicing:
+- [start:stop:step] // Very much like splice in JS. Step is defaulted to 1 but can be omitted.
+- Stop number is not included due to zero basing.
+
+```
+S[3:11] // Indexes 0-3 will not be used, nor will anything after index 10. It is between these values.
+# The step is like an iterator, so if we use 2 as the step count, it will get each other number
+S[2: 9: 2] will produce 3, 5 and 7. It will not give 8 as 9 is the stopping point and we stop just before. 
+```
 
 ## Booleans:
 
