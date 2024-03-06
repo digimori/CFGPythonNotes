@@ -31,11 +31,24 @@ print(x, y, z) # Will output: 'Cats', 'Dogs', 'Bunnies'
 ```
 
 - For strings, you can use the + operator, however this will not work for numbers and will instead add them together.
+- Format strings using the format() method.
 ```
 print(x + y + z) # Will output: 'Cats', 'Dogs', 'Bunnies'
 
 x, y, z = 5, 10, 20
 print(x + y + z) # This will output 35 as it adds the values together in a mathematical sense
+
+# Formatting example:
+cats = 2
+cost_of_cats = 0.75
+total_costs = cats * cost_of_cat
+output = str(cats) + " cats will cost £" + str(total_cost) + " to feed."
+
+print(output) # '2 cats will cost £1.5 to feed.' as a string.
+We can format this string in a way that substitutes placeholders ({}) for values.
+ie, the above string again:
+output = "{} cats will cost £{} to feed".format(cats, total_costs) #  This will place the values in the parameters into the placeholders in the order they are written.
+
 ```
 
 - Trying to combine a string and a number with the + operator will throw an error.
